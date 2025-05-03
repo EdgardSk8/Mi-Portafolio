@@ -756,6 +756,73 @@ footer {
     transform: translateY(-5px);
 }
 
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .image-modal.active {
+    display: flex;
+  }
+  
+  .image-modal .modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    animation: zoomIn 0.4s ease;
+    margin: auto;
+    display: block;
+  }
+  
+  
+  .image-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #dfdfdf;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-modal .close:hover {
+    transform: scale(1.2);
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes zoomOut {
+    from { transform: scale(1); opacity: 1; }
+    to   { transform: scale(0.8); opacity: 0; }
+  }
+  
+  .image-modal.closing .modal-content {
+    animation: zoomOut 0.3s ease;
+  }  
+  
+
 /* Media Queries */
 @media (max-width: 992px) {
     .hero-content h1 {

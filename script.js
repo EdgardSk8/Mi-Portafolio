@@ -120,9 +120,50 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Obtener elementos del modal
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+    const closeBtn = document.querySelector('.image-modal .close');
+
+    // Mostrar modal
+    document.querySelectorAll('.project-img img').forEach(img => {
+        img.addEventListener('click', () => {
+            modal.classList.add('active');
+            modalImg.src = img.src;
+        });
+    });
+
+    // Cerrar modal
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+
+    function closeModal() {
+        modal.classList.add('closing');
+        setTimeout(() => {
+            modal.classList.remove('active', 'closing');
+        }, 300); // debe coincidir con la duración de zoomOut
+    }
+    
+    // Eventos
+    closeBtn.addEventListener('click', closeModal);
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    })
+
+
     
     // Formulario de contacto
-    if (contactForm) {
+    /*if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -139,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Limpiar formulario
             this.reset();
         });
-    }
+    }*/
     
     // Animación al hacer scroll
     const observerOptions = {

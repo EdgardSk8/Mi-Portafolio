@@ -68,8 +68,8 @@
                 <div class="about-text">
                     <h3>Desarrollador apasionado por crear soluciones digitales</h3>
                     <p>Soy un desarrollador apasionado con experiencia en la creación de aplicaciones web resposivas, escritorio y moviles.</p>
-                    <p>Con un enfoque en el desarrollo frontend y un poco de experiencia en backend, me especializo en crear experiencias de usuario intuitivas y atractivas</p>
-                    <p>Uno de mis enfoques de trabajo es la validacion de datos en el fronted y hacer un entonrno agradable para el usuario.</p>
+                    <p>Con un enfoque en el desarrollo frontend y un poco de experiencia en backend, me especializo en crear experiencias de usuario intuitivas y atractivas.</p>
+                    <p>Uno de mis enfoques de trabajo es la validacion de datos en el fronted y hacer un entorno agradable para el usuario.</p>
                     <div class="about-details">
                         <div class="detail">
                             <i class="fas fa-graduation-cap"></i>
@@ -282,9 +282,11 @@
                             <span>JavaScript</span>
                             <span>PHP</span>
                             <span>MYSQL</span>
+                            <span>LARAVEL</span>
+                            <span>NPM</span>
                         </div>
                         <div class="project-links">
-                            <a href="NO DISPONIBLE" class="btn btn-sm"><i class="fas fa-eye"></i> Demo</a>
+                            <a href="https://youtu.be/eh13IFyU1uA" class="btn btn-sm"><i class="fas fa-eye"></i> Demo</a>
                             <a href="https://github.com/EdgardSk8/Gestion_Examenes_UNAN" class="btn btn-sm"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
@@ -297,7 +299,7 @@
                     <div class="project-info">
                         <h3>Generador de codigos QR en Python</h3>
                         <p>
-                            Generador de Codigos QR sin necesidad de paga, con una interfaz muy sencilla hecha unicamente con HTMl, CSS, JavaScript y Python
+                            Aplicación web desarrollada en Python con Flask que permite generar códigos QR a partir de texto ingresado por el usuario. Utiliza la biblioteca qrcode para la generación de los códigos y presenta una interfaz sencilla mediante plantillas HTML.
                         </p>
                         <div class="project-tech">
                             <span>HTML</span>
@@ -314,22 +316,24 @@
 
                 <div class="project-card" data-category="app">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Proyecto 2">
+                        <img src="img/Aplicacionmenu.png" alt="Proyecto 2">
                     </div>
                     <div class="project-info">
-                        <h3>Aplicación de Gestión de Tareas</h3>
-                        <p>Aplicación para organizar tareas con categorías, fechas límite y notificaciones.</p>
+                        <h3>Aplicación de Menu de Restaurante</h3>
+                        <p>Una aplicación móvil desarrollada en Java con Android Studio que permite a los usuarios registrarse e iniciar sesión mediante Firebase Authentication, y gestionar sus propias listas locales mediante un sistema CRUD utilizando SQLite</p>
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                            <span>JAVA</span>
+                            <span>SQLITE</span>
+                            <span>XML</span>
+                            <span>Firebase Authentication</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="fas fa-eye"></i> Demo</a>
-                            <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> Código</a>
+                            <a href="https://www.youtube.com/watch?v=vlMuumZZXKM" class="btn btn-sm"><i class="fas fa-eye"></i> Demo</a>
+                            <a href="https://github.com/EdgardSk8/Aplicacion-Restaurante-Gourmet-en-Android" class="btn btn-sm"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card" data-category="web">
                     <div class="project-img">
                         <img src="img/Pergamino.png" alt="Proyecto 3">
@@ -348,22 +352,21 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card" data-category="other">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Proyecto 4">
+                        <img src="img/CalculadoraAndroid.png" alt="Proyecto 4">
                     </div>
                     <div class="project-info">
-                        <h3>Dashboard Analítico</h3>
-                        <p>Panel de control con gráficos interactivos para visualización de datos.</p>
+                        <h3>Calculadora Android</h3>
+                        <p>Calculadora de estilo iPhone desarrollada en Java para Android. Incluye diseño personalizado, operaciones básicas y botones responsivos, replicando la apariencia de la app nativa de iOS.</p>
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Chart.js</span>
+                            <span>JAVA</span>
+                            <span>XML</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="fas fa-eye"></i> Demo</a>
-                            <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> Código</a>
+                            <a href="https://www.youtube.com/shorts/50YnQpTD0W4" class="btn btn-sm"><i class="fas fa-eye"></i> Demo</a>
+                            <a href="https://github.com/EdgardSk8/Calculadora-Estilo-IPhone-en-Java/" class="btn btn-sm"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
                 </div>
@@ -402,6 +405,13 @@
     <button id="back-to-top" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Modal de Imagen -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+  
 
     <script src="script.js"></script>
 </body>
