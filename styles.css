@@ -608,8 +608,10 @@ header .container {
 }
 
 .contact-content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     display: flex;
-    gap: 50px;
 }
 
 .contact-info, .contact-form {
@@ -629,6 +631,10 @@ header .container {
 
 .contact-details {
     margin-bottom: 30px;
+}
+
+.contact-details li{
+    font-size: 20px;
 }
 
 .contact-item {
