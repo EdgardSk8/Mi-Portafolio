@@ -67,7 +67,7 @@ img {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1px;
 }
 
 .section-header {
@@ -174,7 +174,7 @@ header .container {
 }
 
 .logo h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--dark-color);
 }
@@ -447,7 +447,7 @@ header .container {
 
 .skill-item {
     background-color: var(--light-color);
-    padding: 20px;
+    padding: 30px;
     border-radius: var(--border-radius);
     box-shadow: 0 5px 15px var(--shadow-color);
     transition: var(--transition);
@@ -461,7 +461,7 @@ header .container {
 }
 
 .skill-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
     margin-bottom: 15px;
     text-align: center;
@@ -538,7 +538,7 @@ header .container {
 
 .project-img {
     overflow: hidden;
-    height: 200px;
+    height: 250px;
 }
 
 .project-img img {
