@@ -201,13 +201,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Descargar CV
     const downloadCV = document.getElementById('download-cv');
+
     if (downloadCV) {
         downloadCV.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Aquí puedes agregar la lógica para descargar el CV
-            alert('Descargando CV...');
-            // En un caso real, redirigirías a un archivo real
-            // window.location.href = 'ruta/a/tu/cv.pdf';
+
+            const fileUrl = 'Curriculum Edgard Tellez.docx';
+
+            const a = document.createElement('a');
+            a.href = fileUrl;
+            a.download = 'Curriculum Edgard Tellez.docx'; 
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
         });
     }
 });
