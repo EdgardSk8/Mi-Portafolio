@@ -205,11 +205,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (downloadCV) {
         downloadCV.addEventListener('click', function(e) {
 
-            const fileUrl = 'Curriculum Edgard Tellez.docx';
+            const fileUrl = 'Curriculum Edgard Tellez.pdf';
 
             const a = document.createElement('a');
             a.href = fileUrl;
-            a.download = 'Curriculum Edgard Tellez.docx'; 
+            a.download = 'Curriculum Edgard Tellez.pdf'; 
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
