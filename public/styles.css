@@ -421,7 +421,8 @@ header .container {
 
 /* Sección Habilidades */
 .skills {
-    margin-top: 0;
+    margin-top: 10px;
+    padding-bottom: 50px;
     background-color: var(--background-color);
 }
 
@@ -494,6 +495,7 @@ header .container {
 
 .projects .container{
     width: 97%;
+    margin-bottom: 30px;
 }
 
 .project-filters {
