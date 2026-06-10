@@ -453,6 +453,9 @@ header .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 25px;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .skill-item {
@@ -591,6 +594,7 @@ header .container {
 
 .project-tech {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 15px;
